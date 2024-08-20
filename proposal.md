@@ -1,4 +1,4 @@
-# [Project Name]
+# Mod 7 Project
 
 Created by Abdullah Khan, and Chris Jimenez.
 
