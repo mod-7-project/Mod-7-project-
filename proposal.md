@@ -1,93 +1,76 @@
 # [Project Name]
 
-Created by [team member], [team member], and [team member].
+Created by Abdullah Khan, and Chris Jimenez.
 
 ## 🚀 Mission statement
 
-Our application, [app name] is for [target audience]. It allows users to [what it does and why audience would use it]
+Our application, is for comic enjoyers. It allows users to search for characters in several different comics. Upon loading it will display images if popular comic book characters. If you click on an image it will display info of that character.
 
 ## API & React Router
 
-This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
+This application will use the Comic Vine API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
 
-- Link to API documentation: [Link goes here]
-- API endpoint #1
-  - Description of endpoint
-  - List of data values used by the endpoint
-- API endpoint #2
-  - Description of endpoint
-  - List of data values used by the endpoint
-- API endpoint #3
-  - Description of endpoint
-  - List of data values used by the endpoint
+- Link to API documentation: [\[Comic Vine\]](https://comicvine.gamespot.com/api/documentation)
+- [Characters](https://comicvine.gamespot.com/api/characters/?api_key=95c02d947924126bfffa281819f89edf014a4d7a&format=json)
+  - List of characters
+  - For each character I want the `name`, `image of character,` and `aliases`
+- [API endpoint #2](https://comicvine.gamespot.com/api/characters/?api_key=95c02d947924126bfffa281819f89edf014a4d7a&format=json)
+  - Powers character has
+  - Several powers the character has
+- [API endpoint #3](https://comicvine.gamespot.com/api/characters/?api_key=95c02d947924126bfffa281819f89edf014a4d7a&format=json)
+  - Movies
+  - Movies the character has been in
 
-[If your API requires an API key, say so here.]
-
-**Example:**
-- https://api.artic.edu/api/v1/artworks
-  - This will fetch an array of artwork objects
-  - For each artwork, I want the `id`, `title`, and `image_id`
-- https://api.artic.edu/api/v1/artworks/{id}
-  - This will fetch a single artwork object
-  - I will use the `id`, `title`, `short_description`, `medium_display`, `place_of_origin` and `image_id`
-- https://api.artic.edu/api/v1/artworks/search?q={query}
-  - This will fetch a list of artworks that relate to the search query
-  - For each artwork, I will use the `id` and `title`
+It requires an api key.
 
 ## 👩‍💻 MVP User Stories & Frontend Routes
 
 The application will feature the following frontend routes and core features:
 
-* On the `/example` page, users can...
-* On the `/example` page, users can...
-* On the `/example` page, users can...
-
-**Example:**
-- On the `/artworks` page, users can view a grid of all artwork
-- On the `/artworks` page, users can click on a piece of art in the grid, taking them to the details page for that piece of art.
-- On the `/artworks/:artworkId` page, users can view additional details for a single piece of art
-- On the `/` page, users can search for artwork titles related to a search term.
+- On the `/home` page, users can see several popular comic book characters
+- On the `/search` page, users can search for a specific character
+- On the `/movies` page, users can see movies where the character has appeared in
 
 ## 🤔 Stretch User Stories
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-* Users will be able to...
-* Users will be able to...
-* Users will be able to...
-
-**Example:**
-* Users will be able to save and view favorited artworks using local storage
-* Users will be able to change the color scheme of the website from light mode to dark mode
+- On the `/build-team` page, users can build a team of supers
+- Able to add their own character to a list
+- Users will see animations gifs of characters
 
 ## 📆 Timeline for reaching MVP in 1 week
 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+
+- [ ] Research the api further
+- [ ] Render a list of characters in any order
+- [ ] Work on nav bar
 
 **Day 2**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+
+- [ ] Finish home page
+- [ ] Work on search form for supers
+- [ ] Render searched supers
 
 **Day 3** (MVP due by the end of the day)
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+
+- [ ] Finish search page
+- [ ] Work on movie page
+- [ ] Finish movie page
 
 **Day 4**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+
+- [ ] Style
+- [ ] Fix bugs
 
 **Day 5**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+
+- [ ] Work on stretch features
+- [ ] Work on stretch features
+- [ ] Work on stretch features
 
 ## Wireframes of each page in your application
 
