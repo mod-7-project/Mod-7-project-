@@ -1,2 +1,8 @@
 import { useContext } from "react";
-import 
+const cardContainer = ({pokemon}) => {
+   return (
+    <div>
+      
+    </div>
+   )
+}
