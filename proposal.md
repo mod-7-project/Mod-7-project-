@@ -4,11 +4,11 @@ Created by Abdullah Khan, and Chris Jimenez.
 
 ## 🚀 Mission statement
 
-Our application, is for comic enjoyers. It allows users to search for characters in several different comics. Upon loading it will display images if popular comic book characters. If you click on an image it will display info of that character.
+Our application, is for Pokemon enjoyers. It allows users to search for pokemon and add it to their team.
 
 ## API & React Router
 
-This application will use the Comic Vine API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
+This application will use the Pokemon API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
 
 - Link to API documentation: (PokeApi)(https://pokeapi.co/api/v2/)
 - (Pokemon)(https://pokeapi.co/api/v2/ability/{id or name}/)
