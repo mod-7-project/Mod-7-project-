@@ -51,12 +51,25 @@ To ensure that we can complete all core features of the application in 1 week, w
 - [ ] Made a fetch to get multiple resources
 - [ ] Created at least 3 components
 - [ ] Have all components in their own files (1 export per file)
+      [ ] There is a `main` element on _each_ page
+- [ ] There is a `nav` element on _each_ page
+- [ ] The `nav` contains a `ul` of links
+- [ ] At least one `h1` element on _each_ page
+- [ ] At least one `section` is used properly on _each_ page
 
 **Day 2**
 
 - [ ] Finish home page
 - [ ] Work on search form for pokemon for the information page
 - [ ] Render searched pokemon information on a new page
+- [ ] Heading tag hierarchy is always correct
+- [ ] `div` is never used in place of `ul` and `li`
+- [ ] Every `form` `input` has a proper `label`
+- [ ] Each `form` is `aria` labelled properly to make it a landmark
+- [ ] Every `img` has a unique `alt` (if applicable, get points if no image)
+- [ ] All colors have a AAA difference
+  - https://color.a11y.com can check your site for you!
+- [ ] All buttons look like buttons, all links look like links
 - [ ] Made a fetch to get a single, specific resource
 - [ ] Made a third fetch for whatever you want
 - [ ] Passed props to a component at least 3 times
