@@ -27,7 +27,7 @@ const CharCard = ({name, url}) => {
     <div className="char-card">
       {pokemonData ? (
         <>
-          <img src={pokemonData.sprites.front_default} alt={name} />
+        <img src={pokemonData?.sprites?.front_default} alt={name} />
           <h3>{pokemonData.name}</h3>
         </>
       ) : (
