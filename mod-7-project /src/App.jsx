@@ -5,8 +5,8 @@ import './App.css'
 // import Navbar from './component/navbar'
 import NotFoundPage from './pages/NotFoundPage'
 import {Routes, Route} from 'react'
-import CharCollection from './component/charCollection'
-
+import CharCollection from './component/PokemonCollection'
+import CharCard from './component/PokemonCard'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,6 +22,8 @@ function App() {
 {/* </Routes> */}
 
 <CharCollection/>
+<CharCard/>
+{/* <PokemonDetails/> */}
    
   <h1>Hello World !!!</h1>
     </>
