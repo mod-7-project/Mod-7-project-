@@ -1,4 +1,5 @@
 import { useContext } from "react";
+
 const cardContainer = ({pokemon}) => {
    return (
     <div>
@@ -6,3 +7,4 @@ const cardContainer = ({pokemon}) => {
     </div>
    )
 }
+
