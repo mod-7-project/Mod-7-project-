@@ -17,6 +17,7 @@ const CharacterProvider = ({ children }) => {
             console.log(data)
             // If data is successfully fetched, update the data state
             if (data) setAllCharacters(data);
+            console.log(data)
             // If an error occurs, update the error state
             if (error) setError(error.message);
             // console.log(data)
