@@ -1,4 +1,4 @@
-import GoHomeButton from "../components/GoHomeButton";
+// import GoHomeButton from "../components/GoHomeButton";
 
 const NotFoundPage = () => {
   return (

@@ -1,9 +1,9 @@
-const PokemonCard = ({name, frontSprite}) => {
+const ChardCard = ({name, image }) => {
   return (
     <div className="ui card">
       <div>
         <div className="image">
-          <img src="frontSprite" alt="pokemon name"/>
+          <img src={image} alt=""/>
         </div>
         <div className = "nameContainer">
           <p className="name">{name}</p>
@@ -12,3 +12,5 @@ const PokemonCard = ({name, frontSprite}) => {
     </div>
   )
 }
+
+export default ChardCard

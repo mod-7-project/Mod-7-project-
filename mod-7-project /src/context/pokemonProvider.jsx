@@ -5,7 +5,7 @@ import CharacterContext from "./context";
 
 
 const CharacterProvider = ({ children }) => {
-    const [allCharacters, setAllCharacters] = useState();
+    const [allCharacters, setAllCharacters] = useState([]);
     const [error, setError] = useState('')
 
     // TODO: use useEffect to fetch data from the local JSON server (remember to start JSON server!)
@@ -16,7 +16,7 @@ const CharacterProvider = ({ children }) => {
             const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon`);
             console.log(data)
             // If data is successfully fetched, update the data state
-            if (data) setAllCharacters(data);
+            if (data) setAllCharacters(data.results);
             console.log(data)
             // If an error occurs, update the error state
             if (error) setError(error.message);
