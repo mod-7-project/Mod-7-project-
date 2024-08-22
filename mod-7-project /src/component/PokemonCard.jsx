@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import handleFetch from '../utils/fetch';
+import MoreInfo from '../pages/MoreInfoPage';
 
 const CharCard = ({name, url}) => {
   const [pokemonData, setPokemonData] = useState('');
@@ -24,7 +25,9 @@ const CharCard = ({name, url}) => {
   console.log(pokemonData)
 
   return (
-    <div className="char-card">
+    <div className="char-card" onClick={(e) => {
+
+    }}>
       {pokemonData ? (
         <>
         <img src={pokemonData?.sprites?.front_default} alt={name} />
