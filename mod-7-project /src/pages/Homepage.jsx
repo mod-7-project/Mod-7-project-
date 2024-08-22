@@ -1,6 +1,6 @@
 import CharCollection from '../component/PokemonCollection'
 import  CharCard  from '../component/PokemonCard'
-import Form from './MakeTeamPage'
+// import Form from './MakeTeamPage'
 
 
 const HomePage = () => {

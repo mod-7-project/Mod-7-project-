@@ -10,9 +10,11 @@ import MoreInfo from './pages/MoreInfoPage';
 import HomePage from './pages/Homepage';
 import Filter from './component/filter';
 
+
 function App() {
   return (
     <div className='app'>
+
   <Filter/>
       <Routes>
         <Route path='/' element={<HomePage />} />
