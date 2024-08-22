@@ -13,11 +13,12 @@ const CharCollection = () => {
 
     return (
         <div className="cards">
-            {allCharacters?.map((character, index)=> <CharCard key={index} name={character.name} 
-            url={character.url}
-                    />)}
+            {allCharacters?.slice(0, 24).map((character, index) => (
+                <CharCard key={index} name={character.name} url={character.url} 
+                />
+            ))}
         </div>
-    )
+    );
 }
 
 export default CharCollection
