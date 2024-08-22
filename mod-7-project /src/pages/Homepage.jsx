@@ -7,7 +7,7 @@ const HomePage = () => {
     <div>   
       
        <CharCollection/>
-       <CharCard/>
+       {/* <CharCard/> */}
        
        </div>
    
