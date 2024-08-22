@@ -13,8 +13,8 @@ const CharacterProvider = ({ children }) => {
         // Function to handle the fetching of GIFs
         const doFetch = async () => {
             // Calling the handleFetch function to get data from the Giphy API
-            const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon`);
-            console.log(data)
+            const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=24`);
+            // console.log(data)
             // If data is successfully fetched, update the data state
             if (data) setAllCharacters(data.results);
             console.log(data)
@@ -25,7 +25,7 @@ const CharacterProvider = ({ children }) => {
         }
         doFetch(); // Trigger the fetch operation
     }, []); // Empty dependency array ensures this effect runs only once on component mount
-    console.log(allCharacters);
+    // console.log(allCharacters);
 
 
 
