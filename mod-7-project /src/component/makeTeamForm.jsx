@@ -1,13 +1,9 @@
-import { useState } from "react"
 import { useEffect } from "react"
 import handleFetch from "../utils/fetch"
 
 
 
-const Form = () => {
-  const [searchInput, setSearchInput] = useState("")
-  const [currPokemon, setCurrPokemon] = useState([])
-  
+const Form = ({searchInput, setSearchInput, currPokemon, setCurrPokemon}) => {
   useEffect(() => {
     const doFetch = async() => {
       const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1302`)

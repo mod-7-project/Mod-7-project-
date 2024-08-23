@@ -1,6 +1,6 @@
 import CharCollection from '../component/PokemonCollection'
 import  CharCard  from '../component/PokemonCard'
-// import Form from './MakeTeamPage'
+import TeamPage from './MakeTeamPage'
 
 
 const HomePage = () => {
@@ -9,6 +9,7 @@ const HomePage = () => {
       
        <CharCollection/>
        {/* <CharCard/> */}
+       <TeamPage/>
        </div>
    
 

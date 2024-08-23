@@ -10,6 +10,7 @@ const CharCard = ({ name, url }) => {
     const doFetch = async () => {
       const [data, error] = await handleFetch(url);
       if (data) setPokemonData(data);
+      console.log(data)
       if (error) setError(error.message);
     };
     doFetch();
