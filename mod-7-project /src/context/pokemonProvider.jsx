@@ -7,7 +7,11 @@ import CharacterContext from "./context";
 const CharacterProvider = ({ children }) => {
     const [allCharacters, setAllCharacters] = useState([]);
     const [error, setError] = useState('')
+    const [currPokemonTeam, setCurrPokemonTeam] = useState([])
 
+    if (currPokemonTeam.length > 6) {
+        setCurrPokemonTeam([...currPokemonTeam].slice(0,6))
+    }
     // TODO: use useEffect to fetch data from the local JSON server (remember to start JSON server!)
     useEffect(() => {
         // Function to handle the fetching of GIFs
@@ -32,7 +36,9 @@ const CharacterProvider = ({ children }) => {
     // TODO: Add values to be included in the context here
     let contextValues = {
         allCharacters, 
-        setAllCharacters
+        setAllCharacters,
+        currPokemonTeam,
+        setCurrPokemonTeam
     }
 
     // TODO: Wrap the {children} in the PokemonContext.Provider and provide the values above

@@ -27,6 +27,8 @@
 
 }
 
+
+
 .char-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -40,6 +42,42 @@
 }
 
 .char-card img:hover {
+  animation: moveUpDown 2s infinite ease-in-out;
+  /* Apply animation */
+}
+
+.search-team-char-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Adjust the minmax value to control the size of the grid items */
+  gap: 10px; /* Adjust gap between items */
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 25px;
+
+}
+
+
+
+.search-team-char-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+.search-team-char-card img{
+
+  width: 110px;
+
+}
+
+.search-team-char-card img:hover {
   animation: moveUpDown 2s infinite ease-in-out;
   /* Apply animation */
 }
