@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState  } from "react";
 import CharacterContext from "../context/context";
 import handleFetch from "../utils/fetch";
+import { FaSearch } from 'react-icons/fa'
 
-const Filter = () => {
+const Search = () => {
     const [input, setInput] = useState('');
     const setPokemon = useContext(CharacterContext).setAllCharacters
 
@@ -18,13 +19,19 @@ const Filter = () => {
 
     return (
         <div className="ui search">
-            <div className="ui icon input">
-                <input className="prompt" placeholder="Search by Name..." value={input} onChange={(e)=> setInput(e.target.value)} />
-                <i className="search icon" />
-            </div>
+          <div className='input-wrapper'>
+<FaSearch id='search-icon'/> 
+    <input placeholder='Search For Pokemon' 
+    value={input} 
+    onChange={(e) => setInput(e.target.value)} 
+    /> 
+
+</div>
         </div>
+
+
     )
 }
 
 
-export default Filter
+export default Search 
