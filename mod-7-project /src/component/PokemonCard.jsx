@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import handleFetch from '../utils/fetch';
+import capitalPokeName from '../utils/capitalPokeName';
 
 const CharCard = ({ name, url }) => {
   const [pokemonData, setPokemonData] = useState('');
@@ -29,7 +30,7 @@ const CharCard = ({ name, url }) => {
             alt={name} 
             onClick={playCry} 
           />
-          <h3>{pokemonData.name}</h3>
+          <h3>{capitalPokeName(pokemonData.name)}</h3>
           <Link to={`/more-info/${pokemonData.id}`}>More Info</Link> {/* Link with Pokémon ID */}
         </>
       ) : (
