@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import handleFetch from "../utils/fetch"
 import Moves from "./Moves"
+import capitalPokeName from "../utils/capitalPokeName"
 
 const CurrTeamCard = (pokemon) => {
   const [pokemonData, setPokemonData] = useState('')
@@ -16,15 +17,13 @@ const CurrTeamCard = (pokemon) => {
     doFetch();
   }, [pokemon.url]);
 
-
-
   return (
     <article className="curr-team-card">
       {pokemonData ? (
       
       <>
         <img src={pokemonData?.sprites?.other?.showdown?.front_default} alt={pokemon.name} />
-        <h3>{pokemonData.name}</h3>
+        <h3>{capitalPokeName(pokemonData.name)}</h3>
         <Moves pokeMoves={pokeMoves} setPokeMoves={setPokeMoves} moves={pokemonData.moves}/>
       
         </>
