@@ -8,22 +8,23 @@ import { Routes, Route } from 'react-router-dom';
 
 import MoreInfo from './pages/MoreInfoPage';
 import HomePage from './pages/Homepage';
-import Filter from './component/filter';
+import Navbar from './component/navbar';
+import TeamPage from './pages/MakeTeamPage';
 
 
 function App() {
   return (
-    <div className='app'>
-
-  <Filter/>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/*' element={<NotFoundPage />} />
-        <Route path="/more-info/:id" element={<MoreInfo/>}/>
-      </Routes>
-    </div>
-
-    
+    <>
+      <Navbar />
+      <div className='app'>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/*' element={<NotFoundPage />} />
+          <Route path='/more-info/:id' element={<MoreInfo />} />
+          <Route path='/TeamPage' element={<TeamPage />} /> 
+        </Routes>
+      </div>
+    </>
   );
 }
 

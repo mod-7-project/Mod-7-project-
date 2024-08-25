@@ -1,41 +1,27 @@
-// import { useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import { FaSearch } from 'react-icons/fa'
-// import NotFoundPage from '../pages/NotFoundPage';
+// src/components/Navbar.js
+import React from 'react';
+import { Link } from 'react-router-dom';
 
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="logo-container">
+        <img 
+          src="https://seeklogo.com/images/P/Pokemon-logo-497D61B223-seeklogo.com.png" 
+          alt="Pokémon Logo" 
+          className="pokemon-logo" 
+        />
+      </div>
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/TeamPage">Make Team</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-// const Navbar = () => {
-
-//     const [input, setInput] = useState('')
-
-
-//  return (
-//     <>
-
-//     <nav>
-//         <Link to='/'> <h1>Home</h1> </Link>
-//         <Link to='/search'>
-//         <h1>Search </h1>
-//         </Link>
-//         <Link to='/NotFoundPage'>
-//         <h1>Not Found</h1>
-//         </Link>
-//     </nav>
-
-//     {/* <div className='input-wrapper'>
-//         <FaSearch id='search-icon'/> 
-//             <input placeholder='Search For Pokemon' 
-//             value={input} 
-//             onChange={(e) => setInput(e.target.value)} 
-//             /> 
-
-//     </div> */}
-
-
-//     </>
-//  )
-
-
-//   };
-  
-//   export default Navbar;
+export default Navbar;

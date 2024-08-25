@@ -1,9 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+*{
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%;
+}
+
+.ui.search {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-icon {
+  color: #333;
+  margin-right: 10px;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  color: #333;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
 .cards{
   display: flex;
   flex-wrap: wrap;
@@ -14,10 +67,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Adjust the minmax value to control the size of the grid items */
-  gap: 10px; /* Adjust gap between items */
+  align-items: center;
+  gap: 10px; 
   padding: 0;
-  list-style: none; /* Remove default list styling */
+  list-style: none; 
   background-color: #f8f8f8;
   border: 2px solid #ddd;
   border-radius: 1.5rem;
@@ -43,8 +96,9 @@
 
 .char-card img:hover {
   animation: moveUpDown 2s infinite ease-in-out;
-  /* Apply animation */
+
 }
+
 
 .search-team-char-card {
   display: flex;
@@ -83,32 +137,63 @@
 }
 
 /*animation */
+
 @keyframes moveUpDown {
   0%, 100% {
     transform: translateY(0);
-    /* Starting position */
+  
   }
   50% {
     transform: translateY(-25px);
-    /* Move up */
+  
   }
 }
 
 
+/* src/components/Navbar.css */
+.navbar {
+  background-color: black;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
 
+.logo-container {
+  flex: 1;
+}
 
-/* .card-ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 16px; 
+.pokemon-logo {
+  height: 70px;
+  margin-left: 1rem;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
   padding: 0;
-  list-style: none; 
-} */
+  flex: 1;
+  justify-content: flex-end; /* Align items to the right */
+}
 
-/* .card-li {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-} */
+.navbar-item {
+  margin-left: 2.5rem;
+  margin-right: 3rem;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-item a:hover {
+  color: #ddd;
+}
+
+
