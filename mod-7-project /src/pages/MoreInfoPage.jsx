@@ -24,6 +24,12 @@ const MoreInfo = () => {
     setIsShiny(prevState => !prevState);
   };
 
+  // Play the Pokémon cry sound
+  const playCry = () => {
+    const audio = new Audio(pokemonData.cries?.latest || pokemonData.cries?.legacy);
+    audio.play();
+  };
+
   return (
     <div className="more-info-container">
       <div className="image-section">
@@ -37,6 +43,7 @@ const MoreInfo = () => {
         <h1>{pokemonData.name}</h1>
         <p><strong>Type:</strong> {pokemonData.types.map(type => type.type.name).join(', ')}</p>
         <p><strong>Moves:</strong> {pokemonData.moves.map(move => move.move.name).slice(0, 10).join(', ')}</p>
+        <button onClick={playCry} className="play-cry-button">Play Cry</button> {/* Button to play cry */}
         <Link to="/" className="back-home-button">
           <button>Get Back Home</button>
         </Link>
@@ -46,6 +53,7 @@ const MoreInfo = () => {
 };
 
 export default MoreInfo;
+
 
 
 
