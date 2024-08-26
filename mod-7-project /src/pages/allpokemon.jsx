@@ -5,12 +5,12 @@ import Search from "../component/filter";
 
 const AllPokemon= () => {
     return (
-        <>
+        <main>
 
         
         <Search/>
         <CharCollection/>
-        </>
+        </main>
 
     );
   };

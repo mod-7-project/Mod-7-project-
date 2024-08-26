@@ -12,11 +12,11 @@ const TeamPage = () => {
   const currPokemonTeam = useContext(CharacterContext).currPokemonTeam
   const setCurrPokemonTeam = useContext(CharacterContext).setCurrPokemonTeam
   return (
-    <>
+    <main id="team-page">
       <Form searchInput={searchInput} setSearchInput={setSearchInput} currPokemon={currPokemon} setCurrPokemon={setCurrPokemon}/>
       <SearchTeamOutput currPokemon={currPokemon} currPokemonTeam={currPokemonTeam} setCurrPokemonTeam={setCurrPokemonTeam}/>
       <Teams currPokemonTeam={currPokemonTeam} setCurrPokemonTeam={setCurrPokemonTeam}/>
-    </>
+    </main>
     
   )
 }
