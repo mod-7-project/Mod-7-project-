@@ -5,9 +5,9 @@ import Search from "../component/filter";
 
 const AllPokemon= () => {
     return (
-        <main>
+        <main id="all-pokemon-page">
 
-        
+        <h1>Search 'em  all!</h1>
         <Search/>
         <CharCollection/>
         </main>

@@ -12,26 +12,26 @@ const Moves = ({pokeMoves, setPokeMoves, moves}) => {
   } else {
     return (
       <>
-        <form onSubmit={(e) => 
+        <form id="moves-form"onSubmit={(e) => 
           setPokeMoves(handleMoveSubmit(e))
         }>
-          <label htmlFor="move1">Move 1:</label>
-          <select name="move1" className="move1">
+          <label className="moves"htmlFor="move1">Move 1:</label>
+          <select name="move1">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
-          <label htmlFor="move2">Move 2:</label>
-          <select name="move2" className="move2">
+          <label className="moves"htmlFor="move2">Move 2:</label>
+          <select name="move2">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
-          <label htmlFor="move3">Move 3:</label>
-          <select name="move3" className="move3">
+          <label className="moves" htmlFor="move3">Move 3:</label>
+          <select name="move3">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
-          <label htmlFor="move4">Move 4:</label>
-          <select name="move4" className="move4">
+          <label className="moves" htmlFor="move4">Move 4:</label>
+          <select name="move4">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
-          <button type="submit">Set Moves!</button>
+          <button className="add-team-button" type="submit">Set Moves!</button>
         </form>
       </>
     )
