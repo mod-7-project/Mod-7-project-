@@ -62,6 +62,8 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 25px;
+  justify-content: space-evenly;
+  
 }
 
 .char-card {
@@ -415,6 +417,7 @@ input:focus {
   z-index: 0;
 }
 
+
 /* Not Found Page Container */
 .not-found-container {
   display: flex;
@@ -453,3 +456,15 @@ input:focus {
   background-color: #0056b3;
 }
 
+#team-page {
+  justify-content: center;
+  align-items: center;
+}
+
+#make-team-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}

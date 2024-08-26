@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
+
     <div className='banner'>
       <div className="slider" style={{ '--quantity': 7 }}>
+
+    <main className='banner'>
+      <div className="slider" style={{ '--quantity': 6 }}>
+
         <div className="item" style={{ '--position': 1 }}>
           <img src="/src/images/bulbasaur2.png" alt="Bulbasaur" />
         </div>
@@ -39,7 +44,7 @@ const HomePage = () => {
         <h1 data-content="Pokemon">Pokemon</h1>
         <div className="model"></div>
       </div>
-    </div>
+    </main>
   );
 };
 
