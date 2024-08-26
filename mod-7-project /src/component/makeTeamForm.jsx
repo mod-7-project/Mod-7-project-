@@ -21,15 +21,20 @@ const Form = ({searchInput, setSearchInput, currPokemon, setCurrPokemon}) => {
   // }, [currPokemon])
 
   return (
+
     <div id="make-team-form">
       <h1 id="team-form-title">Build Your Team!</h1>
       <form id="build-your-team">
+
         <label>Name</label>
         <input type="text" placeholder="Name" value={searchInput} onChange={(e) => {
           setSearchInput(e.target.value)
         }}/>
       </form>
     </div>
+   
+
+
   )
 }
 

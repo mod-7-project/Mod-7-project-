@@ -13,7 +13,7 @@ const CharCollection = () => {
 
     return (
         <div className="cards">
-            {allCharacters?.slice(0, 28).map((character, index) => (
+            {allCharacters?.slice(0, 24).map((character, index) => (
                 <CharCard key={index} name={character.name} url={character.url} 
                 />
             ))}

@@ -27,7 +27,14 @@ const CharCard = ({ name, url }) => {
             alt={name} 
           />
           <h3>{capitalPokeName(pokemonData.name)}</h3>
-          <Link to={`/more-info/${pokemonData.id}`}>More Info</Link> {/* Link with Pokémon ID */}
+          <Link to={`/more-info/${pokemonData.id}`}>
+          <button className='more-info-button'>
+
+          More Info
+
+          </button>
+          
+          </Link> {/* Link with Pokémon ID */}
         </>
       ) : (
         <p>No data available</p>
