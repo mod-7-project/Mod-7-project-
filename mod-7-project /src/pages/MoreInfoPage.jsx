@@ -44,8 +44,8 @@ const MoreInfo = () => {
         <p><strong>Type:</strong> {pokemonData.types.map(type => type.type.name).join(', ')}</p>
         <p><strong>Moves:</strong> {pokemonData.moves.map(move => move.move.name).slice(0, 10).join(', ')}</p>
         <button onClick={playCry} className="play-cry-button">Play Cry</button> {/* Button to play cry */}
-        <Link to="/" className="back-home-button">
-          <button>Get Back Home</button>
+        <Link to="/AllPokemon" className="back-home-button">
+          <button>Go back to Pokemon</button>
         </Link>
       </div>
     </div>

@@ -1,9 +1,4 @@
-import { Link } from 'react-router-dom';
-import CharCollection from '../component/PokemonCollection';
-import CharCard from '../component/PokemonCard';
-import TeamPage from './MakeTeamPage';
-import Search from '../component/filter';
-import AllPokemon from './allpokemon';
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -32,12 +27,11 @@ const HomePage = () => {
       <div className="content">
         <h1 data-content="Pokemon">Pokemon</h1>
         <div className="model"></div>
+
         <div className="button-container" style={{ marginTop: '20px', textAlign: 'center' }}>
-          <Link to="/AllPokemon">
-            <button style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
-              See All Pokémon
-            </button>
-          </Link>
+        <Link to="/AllPokemon" className="back-home-button">
+          <button>Go back to Pokemon</button>
+        </Link>
         </div>
       </div>
     </div>

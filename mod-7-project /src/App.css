@@ -287,7 +287,7 @@ input:focus {
 
 @keyframes autoRun {
   from {
-    transform: perspective(1000px)rotateX(-10deg) rotateY(0deg);
+    transform: perspective(1000px)rotateX(-20deg) rotateY(0deg);
   }
   to {
     transform: perspective(1000px)rotateX(-20deg)  rotateY(360deg);
