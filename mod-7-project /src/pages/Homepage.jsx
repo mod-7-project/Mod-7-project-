@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
 
-    <div className='banner'>
-      <div className="slider" style={{ '--quantity': 7 }}>
 
     <main className='banner'>
       <div className="slider" style={{ '--quantity': 6 }}>
