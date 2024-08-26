@@ -16,10 +16,7 @@ const CharCard = ({ name, url }) => {
     doFetch();
   }, [url]);
 
-  const playCry = () => {
-    const audio = new Audio(pokemonData.cries?.latest || pokemonData.cries?.legacy);
-    audio.play();
-  };
+  
 
   return (
     <div className="char-card">
@@ -28,7 +25,6 @@ const CharCard = ({ name, url }) => {
           <img 
             src={pokemonData?.sprites?.other?.showdown?.front_default} 
             alt={name} 
-            onClick={playCry} 
           />
           <h3>{capitalPokeName(pokemonData.name)}</h3>
           <Link to={`/more-info/${pokemonData.id}`}>More Info</Link> {/* Link with Pokémon ID */}
@@ -38,7 +34,8 @@ const CharCard = ({ name, url }) => {
       )}
     </div>
   );
-};
+
+}
 
 export default CharCard;
 
