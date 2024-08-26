@@ -20,10 +20,10 @@ const HomePage = () => {
           <img src="/src/images/squirt2.png" alt="Squirtle" />
         </div>
         <div className="item" style={{ '--position': 6 }}>
-            <img src="" alt="" />
+            <img src="/src/images/heels.jpg" alt="" />
         </div>
         <div className="item" style={{ '--position': 7 }}>
-          <img src="/src/images/umbreon.webp" alt="Umbreon" />
+          <img src="/src/images/found.jpg" alt="Umbreon" />
         </div>
       </div>
 
