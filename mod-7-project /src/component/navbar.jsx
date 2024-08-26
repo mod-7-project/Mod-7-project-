@@ -17,8 +17,12 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="navbar-item">
+          <Link to="/AllPokemon">All Pokemon</Link>
+        </li>
+        <li className="navbar-item">
           <Link to="/TeamPage">Make Team</Link>
         </li>
+       
       </ul>
     </nav>
   );
