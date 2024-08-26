@@ -1,8 +1,14 @@
-// src/components/Navbar.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo-container">
@@ -12,20 +18,25 @@ const Navbar = () => {
           className="pokemon-logo" 
         />
       </div>
-      <ul className="navbar-list">
+      <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <ul className={`navbar-list ${isOpen ? 'active' : ''}`}>
         <li className="navbar-item">
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={toggleMenu}>Home</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/AllPokemon">All Pokemon</Link>
+          <Link to="/AllPokemon" onClick={toggleMenu}>All Pokemon</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/TeamPage">Make Team</Link>
+          <Link to="/TeamPage" onClick={toggleMenu}>Make Team</Link>
         </li>
-       
       </ul>
     </nav>
   );
 };
 
 export default Navbar;
+

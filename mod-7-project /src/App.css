@@ -149,34 +149,27 @@ input:focus {
   
   }
 }
-
+/* Navbar */
 .navbar {
-  background-color: black;
-  padding: 1.5rem;
-  width: 100%;
-  margin: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-.logo-container {
-  flex: 1;
+  padding: 10px 20px;
+  background-color: #CC0000;
+  color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .pokemon-logo {
-  height: 70px;
-  margin-left: 1rem;
+  height: 60px;
 }
 
 .navbar-list {
-  list-style: none;
   display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  flex: 1;
-  justify-content: flex-end; /* Align items to the right */
 }
 
 .navbar-item {
@@ -194,6 +187,54 @@ input:focus {
 .navbar-item a:hover {
   color: #ddd;
 }
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Aligns the hamburger menu to the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 15px 0;
+  }
+}
+
+
+
 
 
 .more-info-container {
@@ -246,7 +287,8 @@ input:focus {
 }
 
 .play-cry-button,
-.back-home-button button {
+.back-home-button button ,
+.more-info-button{
   margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
   font-size: 1.2rem;
@@ -271,6 +313,7 @@ input:focus {
   text-align: center;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
 .banner .slider {
@@ -283,6 +326,7 @@ input:focus {
   transform: perspective(1000px);
   animation: autoRun 10s linear infinite;
   z-index: 2;
+  display: flex;
 }
 
 @keyframes autoRun {
@@ -317,7 +361,7 @@ input:focus {
 .banner .content{
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
   width: min(1400px, 100vw);
   height:max-content;
@@ -335,6 +379,7 @@ input:focus {
   line-height: 1em;
   color: #25283B;
   position: relative;
+  
 }
 
 .banner .content h1::after{

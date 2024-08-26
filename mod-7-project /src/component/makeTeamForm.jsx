@@ -21,7 +21,7 @@ const Form = ({searchInput, setSearchInput, currPokemon, setCurrPokemon}) => {
   // }, [currPokemon])
 
   return (
-    <div>
+    <div >
       <h3>Build Your Team</h3>
       <form id="build your team">
         <label>Name</label>
