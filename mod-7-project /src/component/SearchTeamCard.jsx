@@ -29,7 +29,7 @@ const SearchTeamCard = ({ name, url , currPokemonTeam, setCurrPokemonTeam}) => {
         <>
           <img src={pokemonData?.sprites?.other?.showdown?.front_default} alt={name} />
           <h3>{capitalPokeName(pokemonData.name)}</h3>
-          <button onClick={(e) => {
+          <button className="add-team-button"onClick={(e) => {
             e.preventDefault
             setCurrPokemonTeam((pokemonTeam) => [...pokemonTeam, {name, url}])
           }}>Add to Team!</button>
