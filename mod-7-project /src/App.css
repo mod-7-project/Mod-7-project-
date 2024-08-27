@@ -290,8 +290,9 @@ input:focus {
 }
 
 .play-cry-button,
+.back-home-button button ,
+.more-info-button, .prev-button, .next-button, .add-team-button{
 
-.back-home-button button, .add-team-button, .more-info-button{
 
   margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
@@ -307,6 +308,15 @@ input:focus {
 .play-cry-button:hover,
 .back-home-button button:hover {
   background-color: #0056b3;
+}
+
+.next-button{
+  margin-left: 40px;
+}
+.moving-buttons{
+  display: flex;
+  justify-content: center;
+
 }
 
 
@@ -409,9 +419,9 @@ input:focus {
 .banner .content .model{
   background-image: url("src/images/ash.png");
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   position: absolute;
-  bottom: 10;
+  bottom: 5;
   background-size: auto 100% ;
   background-repeat: no-repeat;
   background-position: top center;

@@ -5,10 +5,11 @@ const HomePage = () => {
 
 
     <main className='banner'>
-      <div className="slider" style={{ '--quantity': 6 }}>
+      <div className="slider" style={{ '--quantity': 7 }}>
 
-        <div className="item" style={{ '--position': 1 }}>
-          <img src="/src/images/bulbasaur2.png" alt="Bulbasaur" />
+
+      <div className="item" style={{ '--position': 1 }}>
+            <img src="/src/images/heels.jpg" alt="" />
         </div>
         <div className="item" style={{ '--position': 2 }}>
           <img src="/src/images/charzard2.png" alt="Charizard" />
@@ -17,16 +18,17 @@ const HomePage = () => {
           <img src='/src/images/pikachu.jpg' alt="Pikachu" />
         </div>
         <div className="item" style={{ '--position': 4 }}>
-          <img src="/src/images/snorlax2.png" alt="Snorlax" />
+          <img src="/src/images/found.jpg" alt="Umbreon" />
         </div>
+
         <div className="item" style={{ '--position': 5 }}>
           <img src="/src/images/squirt2.png" alt="Squirtle" />
         </div>
         <div className="item" style={{ '--position': 6 }}>
-            <img src="/src/images/heels.jpg" alt="" />
+          <img src="/src/images/bulbasaur2.png" alt="Bulbasaur" />
         </div>
         <div className="item" style={{ '--position': 7 }}>
-          <img src="/src/images/found.jpg" alt="Umbreon" />
+          <img src="/src/images/snorlax2.png" alt="Snorlax" />
         </div>
       </div>
 
