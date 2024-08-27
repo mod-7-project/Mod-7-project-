@@ -29,7 +29,7 @@ const HomePage = () => {
 
       <div className="content">
         <div className="button-container" style={{ position: 'absolute', bottom: '2rem', right: '5px', backgroundColor: '#007bff' }}>
-          <Link to="/AllPokemon" className="go-home" style={{ padding: '10px 20px', fontSize: '19px', cursor: 'pointer', color: '#fff', textDecoration: 'none' }}>
+          <Link to="/AllPokemon" aria-label="Go to Pokemon Search Page" className="go-home" style={{ padding: '10px 20px', fontSize: '19px', cursor: 'pointer', color: '#fff', textDecoration: 'none' }}>
             See All Pokémon
           </Link>
         </div>

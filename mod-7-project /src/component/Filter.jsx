@@ -23,7 +23,8 @@ const Search = () => {
 <FaSearch id='search-icon'/> 
     <input placeholder='Search For Pokemon' 
     value={input} 
-    onChange={(e) => setInput(e.target.value)} 
+    onChange={(e) => setInput(e.target.value)}
+    aria-labelledby="Search Pokemon by Name"
     /> 
 
 </div>

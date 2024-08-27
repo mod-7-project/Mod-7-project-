@@ -12,7 +12,7 @@ const NotFoundPage = () => {
         alt="Detective Pikachu" 
         className="not-found-image" 
       />
-      <Link to="/" className="back-home-button">
+      <Link to="/" className="back-home-button" aria-label='Go Back To Home Page'>
         <button>Get Back Home</button>
       </Link>
     </main>
