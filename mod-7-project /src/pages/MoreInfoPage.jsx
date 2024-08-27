@@ -44,7 +44,7 @@ const MoreInfo = () => {
         <h1>{capitalPokeName(pokemonData.name)}</h1>
         <p><strong>Type:</strong> {pokemonData.types.map(type => capitalPokeName(type.type.name)).join(', ')}</p>
         <p><strong>Moves:</strong> {pokemonData.moves.map(move => capitalPokeName(move.move.name)).slice(0, 20).join(', ')}</p>
-        <button onClick={playCry} className="play-cry-button">Play Cry</button> {/* Button to play cry */}
+        <button onClick={playCry} aria-label={`Play ${pokemonData.name} Cry`} className="play-cry-button">Play Cry</button> {/* Button to play cry */}
         <Link to="/AllPokemon" className="back-home-button">
           <button>Go back to Pokemon</button>
         </Link>

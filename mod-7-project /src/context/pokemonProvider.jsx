@@ -17,7 +17,7 @@ const CharacterProvider = ({ children }) => {
         // Function to handle the fetching of GIFs
         const doFetch = async () => {
             // Calling the handleFetch function to get data from the Giphy API
-            const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=1302`);
+            const [data, error] = await handleFetch(`https://pokeapi.co/api/v2/pokemon`);
             // console.log(data)
             // If data is successfully fetched, update the data state
             if (data) setAllCharacters(data.results);

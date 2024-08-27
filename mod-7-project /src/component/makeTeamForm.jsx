@@ -27,8 +27,9 @@ const Form = ({searchInput, setSearchInput, currPokemon, setCurrPokemon}) => {
       <form id="build-your-team">
 
         <label>Name</label>
-        <input type="text" placeholder="Name" value={searchInput} onChange={(e) => {
+        <input type="text" placeholder="Name" value={searchInput} aria-labelledby="Pokemon Name" onChange={(e) => {
           setSearchInput(e.target.value)
+          
         }}/>
       </form>
     </div>
