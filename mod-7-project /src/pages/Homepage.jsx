@@ -34,7 +34,7 @@ const HomePage = () => {
 
       <div className="content">
         <div className="button-container" style={{ position: 'absolute', bottom: '2rem', left: '5px' }}>
-          <Link to="/AllPokemon">
+          <Link to="/AllPokemon" aria-label="Go to Pokemon Search Page">
             <button style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}>
               See All Pokémon
             </button>

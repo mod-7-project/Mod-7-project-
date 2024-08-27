@@ -30,10 +30,10 @@ const CharCollection = () => {
                 ))}
             </div>
             <div className="moving-buttons">
-                <button className='prev-button' onClick={handlePrev} disabled={currentPage === 0}>
+                <button className='prev-button' onClick={handlePrev} disabled={currentPage === 0} aria-label='Go to Previous set of Pokemon'>
                     Prev
                 </button>
-                <button className='next-button'onClick={handleNext} disabled={startIndex + charactersPerPage >= allCharacters.length}>
+                <button className='next-button'onClick={handleNext} disabled={startIndex + charactersPerPage >= allCharacters.length} aria-label='Go to Next set of Pokemon'>
                     Next
                 </button>
             </div>

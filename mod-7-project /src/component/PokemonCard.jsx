@@ -28,7 +28,7 @@ const CharCard = ({ name, url }) => {
           />
           <h3>{capitalPokeName(pokemonData.name)}</h3>
           <Link to={`/more-info/${pokemonData.id}`}>
-          <button className='more-info-button'>
+          <button className='more-info-button' aria-label={`See more info about ${pokemonData.name}`}>
 
           More Info
 

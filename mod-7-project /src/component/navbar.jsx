@@ -25,13 +25,13 @@ const Navbar = () => {
       </div>
       <ul className={`navbar-list ${isOpen ? 'active' : ''}`}>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu}>Home</Link>
+          <Link to="/" onClick={toggleMenu} aria-label='Go to Home Page'>Home</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/AllPokemon" onClick={toggleMenu}>All Pokemon</Link>
+          <Link to="/AllPokemon" onClick={toggleMenu} aria-label='Go to Pokemon Search Page'>All Pokemon</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/TeamPage" onClick={toggleMenu}>Make Team</Link>
+          <Link to="/TeamPage" onClick={toggleMenu} aria-label='Go to Make Team Page'>Make Team</Link>
         </li>
       </ul>
     </nav>

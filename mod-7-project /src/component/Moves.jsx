@@ -16,19 +16,19 @@ const Moves = ({pokeMoves, setPokeMoves, moves}) => {
           setPokeMoves(handleMoveSubmit(e))
         }>
           <label className="moves"htmlFor="move1">Move 1:</label>
-          <select name="move1">
+          <select name="move1" aria-label="Select Move 1">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
           <label className="moves"htmlFor="move2">Move 2:</label>
-          <select name="move2">
+          <select name="move2" aria-label="Select Move 2">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
           <label className="moves" htmlFor="move3">Move 3:</label>
-          <select name="move3">
+          <select name="move3" aria-label="Select Move 3">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
           <label className="moves" htmlFor="move4">Move 4:</label>
-          <select name="move4">
+          <select name="move4" aria-label="Select Move 4">
             {moves.map((move) => (<option value={capitalPokeName(move.move.name)}>{capitalPokeName(move.move.name)}</option>))}
           </select>
           <button className="add-team-button" type="submit">Set Moves!</button>
