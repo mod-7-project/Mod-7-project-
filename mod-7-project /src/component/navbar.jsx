@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link to="/" onClick={toggleMenu} aria-label='Go to Home Page'>Home</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/AllPokemon" onClick={toggleMenu} aria-label='Go to Pokemon Search Page'>All Pokemon</Link>
+          <Link to="/AllPokemon" onClick={toggleMenu} aria-label='Go to Pokemon Search Page'>Explore</Link>
         </li>
         <li className="navbar-item">
           <Link to="/TeamPage" onClick={toggleMenu} aria-label='Go to Make Team Page'>Make Team</Link>
