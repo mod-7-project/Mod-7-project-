@@ -8,3 +8,4 @@ export default defineConfig({
   // needed for github pages just put the repo name here
   base: '/Mod-7-project-/', 
 })
+
