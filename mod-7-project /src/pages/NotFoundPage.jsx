@@ -8,11 +8,11 @@ const NotFoundPage = () => {
     <main className="not-found-container">
       <h1>Page Not Found</h1>
       <img 
-        src="/src/images/NotFound.jpg" 
+        src="./images/NotFound.jpg" 
         alt="Detective Pikachu" 
         className="not-found-image" 
       />
-      <Link to="/" className="back-home-button" aria-label='Go Back To Home Page'>
+      <Link to="/Mod-7-project-/" className="back-home-button" aria-label='Go Back To Home Page'>
         <button>Get Back Home</button>
       </Link>
     </main>

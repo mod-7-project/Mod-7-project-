@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <div className='app'>
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/Mod-7-project-/' element={<HomePage />} />
           <Route path='/AllPokemon' element={<AllPokemon />} />
           <Route path='/more-info/:id' element={<MoreInfo />} />
           <Route path='/TeamPage' element={<TeamPage />} /> 

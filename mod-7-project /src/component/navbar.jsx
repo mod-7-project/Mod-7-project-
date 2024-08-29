@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
       <ul className={`navbar-list ${isOpen ? 'active' : ''}`}>
         <li className="navbar-item">
-          <Link to="/" onClick={toggleMenu} aria-label='Go to Home Page'>Home</Link>
+          <Link to="/Mod-7-project-/" onClick={toggleMenu} aria-label='Go to Home Page'>Home</Link>
         </li>
         <li className="navbar-item">
           <Link to="/AllPokemon" onClick={toggleMenu} aria-label='Go to Pokemon Search Page'>Explore</Link>
